@@ -1,0 +1,14 @@
+/*=============== FOOTER ===============*/
+.footer {
+    width: 100%;
+    // position: fixed;
+    bottom: 0;
+    float:none;
+    margin: 2rem 0;
+    text-align: center;
+    &__copy {
+     
+        font-size: var(--ff-smaller);
+        color: var(--text-color-light);
+    }
+}

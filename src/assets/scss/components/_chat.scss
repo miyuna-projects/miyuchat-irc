@@ -1,0 +1,173 @@
+.chat {
+    place-content: center;
+	max-width: 800px;
+	overflow: hidden;
+    text-align: center;
+    align-items: center;
+    justify-content: center;    
+    margin: 0 auto;
+
+
+    &__hero {
+        background: var(--first-color-light);
+        color: var(--clr-neutral-100);
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 15px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid var(--text-color-lighten);
+        
+        & a {
+            gap: 0.3rem;
+            color: var(--clr-neutral-100);
+            border: 1px solid var(--text-color-lighten);
+        }
+    }
+
+    &__main {
+        display: grid;
+        grid-template-columns: 0.4fr 1fr;
+        border-left: 2px solid var(--text-color-lighten);
+        border-right: 2px solid var(--text-color-lighten);
+        border-bottom: 2px solid var(--text-color-lighten);
+        height: 379px;
+    }
+    
+    &__sidebar {
+        background: var(--first-color-light);
+        border-right: 2px solid var(--text-color-lighten);
+        color: var(--clr-neutral-100);
+        padding: 20px 20px 60px;
+
+        & h2 {
+            font-size: 15px;
+            background: rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        & h3 {
+            margin-bottom: 10px;
+        }
+        & ul li {
+            color: var(--title-color);
+            padding: 5px 0;
+            font-weight: 600;
+        }
+    }
+    
+    &__messages {
+        padding: 18px 4px 4px 5px;
+        overflow-y: hidden;
+        background: var(--body-color);
+
+        & .scroll {
+            width: 100%;
+            height: 350px;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        & .scroll::-webkit-scrollbar {
+            display: none;
+        }
+
+        & .react-scroll-to-bottom--css-luutz-1tj0vk3 {
+            background-color: rgba(241, 199, 217, 0.753);
+            bottom: 0;
+            height: 16px;
+            right: 12px;
+            width: 17px;
+        }
+
+        & .messages {
+            display: flex;
+            flex-direction: column;
+            color: var(--dark-color);
+            padding: 8px;
+            margin-bottom: 15px;
+            background-color: var(--chat-color);
+            border-radius: 5px;
+            margin-right: 25px;
+            flex-shrink: 2;
+
+            & .text {
+                text-align: left;
+                max-width: 380px; 
+                overflow-x: hidden; 
+                text-overflow: ellipsis;
+                word-wrap: break-word;
+                white-space: initial;
+            }
+
+            & .meta {
+                text-shadow: 0 1px 0 var(--clr-neutral-100);
+                display: flex;
+                font-size: 15px;
+                font-weight: bold;
+                color: var(--first-color-alt);
+                opacity: 0.7;
+                margin-bottom: 7px;
+                justify-content: space-between;
+                gap: 1rem;
+
+                & span {
+                    font-size: 13px;
+                    margin-left: auto;
+                    color: var(--dark-color);
+                }
+            }
+        }
+        & #other { 
+            box-sizing: border-box;
+            padding: 0.5rem 1rem;
+            margin: 1rem;
+            border-radius: 1.125rem 1.125rem 1.125rem 0;
+            min-height: 2.25rem;
+            width: fit-content;
+            min-width: 30%;
+            max-width: 66%;
+        }
+        
+        & #you {
+            padding: 0.4rem 0.7rem 0.7rem 0.7rem;
+            margin: 1rem 1rem 1rem auto;
+            border-radius: 1.125rem 1.125rem 0 1.125rem;
+            width: fit-content;
+            min-width: 30%;
+            max-width: 66%;
+        }
+    }
+    
+    &__form-container {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        padding: 20px 30px;
+        background-color: var(--chat-color);
+        border-left: 2px solid var(--text-color-lighten);
+        border-right: 2px solid var(--text-color-lighten);
+        border-bottom: 2px solid var(--text-color-lighten);
+        border-radius: 5px;
+
+        & form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        & input[type="text"] {
+            font-size: 16px;
+            padding: 5px;
+            height: 39px;
+            flex: 1;
+            border-radius:  0.5rem;
+            border: 1px solid var(--text-color);
+        }
+    }
+}

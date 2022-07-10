@@ -1,0 +1,186 @@
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+    .container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .customize-theme {
+        font-size: 0.8rem;
+    }
+
+    .hero {
+        &__info {
+            column-gap: 1.5rem;
+        }
+        &__buttons {
+            flex-direction: column;
+            row-gap: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .customize-theme {
+        font-size: 0.8rem;
+
+        & .card {
+            padding: 1.4rem;
+        }    
+        & p {
+            margin-top: 1rem;
+            font-size: 0.8rem;
+        }
+        & h4 {
+            font-size: 1rem;
+        }
+    }
+    
+    .customize-theme .font-size {
+        & h6 {
+            font-size: 0.8rem;
+        }
+        & h3 {
+            font-size: 0.9rem;
+        }
+        & > div {
+            padding: 0;
+            padding-left: 0.6rem;
+        }
+    }
+    .customize-theme .choose-size {
+        & span {
+            width: 0.8rem;
+            height: 0.8rem;
+        }
+        & span.font-size-1 {
+            display: none;
+        }
+        & span.font-size-4 {
+            display: none;
+        }
+    }
+    .customize-theme .choose-color {
+        & span {
+            width: 1.1rem;
+            height: 1.1rem;
+            margin-right: 0.1rem;
+        }
+        & span.active {
+            border: 3px solid var(--clr-neutral-100);
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 692px) {
+    .customize-theme .choose-size {
+        & span.font-size-1 {
+            display: none;
+        }
+        & span.font-size-4 {
+            display: none;
+        }
+    }
+    .customize-theme .choose-color span {
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .chat {
+        &__main {
+            display: block;
+        }
+        &__sidebar {
+            display: none;
+        }
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 600px)  {
+    .join__content {
+        grid-template-columns: 350px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 776px) {
+    .join__content {
+        grid-template-columns: repeat(2, 332px);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .dark-theme {
+        top: 2.5rem;
+        right: 2.5rem;
+    }
+
+    .color-theme  {
+        top: 2.5rem;
+        left: 2.5rem;
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 992px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .dark-theme {
+        top: 2.5rem;
+        right: 2.5rem;
+    }
+
+    .color-theme  {
+        top: 2.5rem;
+        left: 2.5rem;
+    }
+
+    .hero {
+        padding-top: 4rem;
+
+        &__border {
+            width: 135px;
+            height: 135px;
+            margin-bottom: 1rem;
+        }
+        &__logo {
+            width: 110px;
+            height: 110px;
+
+            & img {
+                width: 110px;
+            }
+        }
+        &__profession {
+            font-size: .905rem;
+            margin-bottom: 1.5rem;
+        }
+        &__info {
+            column-gap: 3rem;
+
+            &-description {
+                font-size: var(--ff-small);
+            }
+        }
+        &__buttons {
+            column-gap: 2rem;
+        }
+    }
+
+    .join {
+        &__content {
+            gap: 2rem 3rem;
+        }
+    }
+
+    .footer__copy {
+        margin: 4.5rem 0 2.5rem;
+    }
+}

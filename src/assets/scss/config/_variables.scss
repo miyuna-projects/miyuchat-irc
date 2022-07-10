@@ -1,0 +1,53 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    /*========= COLORS =========*/
+    /* HSL (hue, saturation, lightness)
+        Pink: hsl(337, 80%, 85%)
+        Yellow: hsl(52, 80%, 85%)
+        Purple: hsl(310, 80%, 85%)
+        Teal: hsl(152, 80%, 85%)
+        Blue: hsl(202, 80%, 85%)
+    */
+    --hue: 337;
+    --sat: 67%;
+    --lig: 85%;
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --first-color: hsl(var(--hue), var(--sat), var(--lig));
+    --first-color-alt: hsl(var(--hue), var(--sat), 72%); /* -4% */
+    --first-color-light: hsl(var(--hue), 60%, 80%); /* -4% */
+    --title-color: hsl(var(--hue), 12%, 15%);
+    --text-color: hsl(var(--hue), 12%, 45%);
+    --text-color-light: hsl(var(--hue), 8%, 75%);
+    --text-color-lighten: hsl(var(--hue), 8%, 92%);
+    --body-color: hsl(var(--hue), 100%, 99%);
+    --container-color: hsl(0, 0%, 100%);
+
+    --filters-color: hsl(var(--hue), 8%, 92%);
+    --card-color: hsla(0, 0%, 100%);
+
+    --chat-color: hsl(var(--hue), 67%, 90%);
+    --dark-color: hsl(var(--hue), 12%, 15%);
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    /* .5rem = 8px | 1rem = 16px */
+    --ff-body: 'Poppins', sans-serif;
+    --ff-h2: 1.25rem;
+    --ff-h3: 1rem;
+    --ff-normal: .938rem;
+    --ff-small: .813rem;
+    --ff-smaller: .75rem;
+
+    // Responsive typography
+    @media screen and (min-width: 968px) {
+        --ff-h2: 1.5rem;
+        --ff-h3: 1.25rem;
+        --ff-normal: 1rem;
+        --ff-small: .875rem;
+        --ff-smaller: .813rem;
+    }
+}
