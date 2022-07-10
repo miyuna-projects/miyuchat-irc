@@ -1,4 +1,5 @@
 {
+  "homepage": "http://miyuna-projects.github.io/miyuchat-irc",
   "name": "client",
   "version": "0.1.0",
   "private": true,
